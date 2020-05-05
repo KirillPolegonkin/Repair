@@ -14,6 +14,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Museo Sans Light", sans-serif;
   font-weight: 300;
@@ -46,6 +50,18 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10.0px;
 }
 
 .navbar {
@@ -107,7 +123,7 @@ img {
 
 .hero-text {
   flex-basis: 50%;
-  padding-right: 140px;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -137,6 +153,10 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__img {
@@ -186,5 +206,98 @@ img {
   }
   .hero-list__img {
     margin-right: 15px;
+  }
+}
+
+.offer {
+  padding: 90px 0px;
+  background: url(../img/offer/offer_img.png) no-repeat;
+  position: relative;
+  background-size: contain;
+  background-position: center right;
+}
+
+.offer::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer-block__title {
+  font-size: 24px;
+  line-height: 35px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  max-width: 360px;
+  color: #333333;
+  margin-bottom: 24px;
+}
+
+.offer-block__subtitle {
+  display: block;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+  max-width: 250px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.offer-block__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer-block__input:first-child {
+  margin-right: 10px;
+}
+
+.offer-block__button {
+  width: 100%;
+  min-height: 70px;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer-block {
+    width: 100%;
+  }
+  .offer-block__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer-block__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: none;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer-block__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer-block__button {
+    font-size: 13px;
   }
 }

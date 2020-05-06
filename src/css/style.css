@@ -50,6 +50,7 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+  outline: none;
 }
 
 .button:hover {
@@ -258,10 +259,16 @@ img {
 .offer-block__input {
   margin-bottom: 30px;
   width: 240px;
+  color: #333333;
 }
 
 .offer-block__input:first-child {
   margin-right: 10px;
+}
+
+.offer-block__input:focus {
+  border: 1px solid #ffd200;
+  outline: none;
 }
 
 .offer-block__button {

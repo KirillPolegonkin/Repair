@@ -267,6 +267,44 @@ img {
 .offer-block__button {
   width: 100%;
   min-height: 70px;
+  margin-bottom: 31px;
+}
+
+.offer-block__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer-block__textleft {
+  max-width: 224px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333333;
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+}
+
+.offer-block__textright {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.offer-block__text {
+  font-size: 15px;
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.offer-block__phone {
+  font-size: 15px;
+  color: #333333;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
@@ -299,5 +337,12 @@ img {
   }
   .offer-block__button {
     font-size: 13px;
+  }
+  .offer-block__description {
+    flex-direction: column;
+    align-items: start;
+  }
+  .offer-block__textleft {
+    margin-bottom: 18px;
   }
 }
